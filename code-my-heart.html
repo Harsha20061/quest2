@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code My Heart 💻❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas class="matrix-bg" id="matrixCanvas"></canvas>
+
+    <div class="container">
+        <header>
+            <h1><Code My Heart ></h1>
+            <p class="subtitle">// A programming love letter 💻❤️</p>
+        </header>
+
+
+
+
+
+        <div class="input-section">
+            <p class="code-decoration"></p>
+
+            <div class="input-group">
+                <label for="yourName">Your Name:</label>
+                <input type="text" id="yourName" placeholder="Enter your name..." maxlength="20">
+            </div>
+
+            <div class="input-group">
+                <label for="crushName">Their Name:</label>
+                <input type="text" id="crushName" placeholder="Enter their name..." maxlength="20">
+            </div>
+
+            <button class="btn" onclick="calculateLove()">Run Love Algorithm</button>
+        </div>
+
+
+        <div class="output-section" id="outputSection">
+            <div class="compatibility-result">
+                <div class="heart-rate">❤️</div>
+                <div class="percentage" id="percentageDisplay">0%</div>
+                <p id="compatibilityMessage"></p>
+            </div>
+
+            <div class="message-box">
+                <h3>// Generated Love Message:</h3>
+                <div class="message-content" id="loveMessage"></div>
+            </div>
+
+            <div class="love-note" id="loveNote"></div>
+        </div>
+
+
+        <p class="code-decoration" style="text-align: center; margin-top: 2rem;">
+            // Hint: Try entering "developer" + "code" for a surprise! 🔐
+        </p>
+    </div>
+
+
+    <div class="easter-egg-trigger" id="easterEgg">
+        <div class="easter-egg-content">
+            <h2>🎉 YOU FOUND THE EASTER EGG! 🎉</h2>
+            <p style="font-size: 1.5rem; margin: 1rem 0;">print("You are my exception to every rule!")</p>
+            <p style="font-size: 1.5rem; margin: 1rem 0;">❤️ 100% COMPATIBLE ❤️</p>
+            <p style="color: var(--matrix-green); margin-top: 2rem;">return true; // Always</p>
+            <button class="btn" style="margin-top: 2rem;" onclick="closeEasterEgg()">Close</button>
+        </div>
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
