@@ -50,7 +50,7 @@ function calculateHash(name1, name2) {
 
 
     const absoluteHash = Math.abs(hash);
-    const result = (absoluteHash % 100) + 1;
+    const result = (absoluteHash % 51) + 50;
 
     return result;
 }
